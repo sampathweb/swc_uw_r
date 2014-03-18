@@ -58,3 +58,51 @@ x <- 1:4
 x^2
 
 round(rnorm(3, mean=c(0, 100, 1000000)), 2)
+
+(y <- 1:3)
+(z <- 3:7)
+y + z
+x <- c(1, 4, 9)
+str(x)
+pi
+x  <- c("cabbage", pi, 0.3, TRUE)
+str(x)
+x  <- list("cabbage", pi, 0.3, TRUE)
+str(x)
+x <- -3:3
+str(x)
+x < 0
+set.seed(1)
+(x <- round(rnorm(8), 2))
+names(x) <- letters[seq_along(x)]
+x
+x[c(3,5,8)]
+x[c("a", 'd')]
+x[x>0]
+which(x < 0)
+
+## Indexing challenge
+# Get every other element of x...
+x[seq(length(x)) %% 2 == 0]
+x[c(1,3,5,7)]
+x[seq(2, length(x), by=2)]
+x[c(FALSE, TRUE)]
+
+month.abb
+month.name
+
+(x <- cbind(month.abb, month.name))
+typeof(x)
+str(x)
+mode(x)
+str(data.frame(x))
+(x <- rbind(month.abb, month.name))
+
+(x <- matrix(1:10, nrow=5))
+
+(x <- data.frame(month.num = 1:12, month.abb, month.name))
+str(x)
+(x <- data.frame(month.num = 1:12, I(month.abb), I(month.name)))
+str(x)
+x[2,2]
+library(ggplot2)
