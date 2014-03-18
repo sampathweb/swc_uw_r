@@ -48,3 +48,5 @@ lm(lifeExp ~ year, gDat, subset=country == "Zimbabwe")
 (yearMin <- min(gDat$year))
 lm(lifeExp ~ I(year - yearMin), gDat, subset=country == "Zimbabwe")
 
+# session to ddply starts now
+
